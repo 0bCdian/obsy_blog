@@ -1,0 +1,1 @@
+source ./scripts/precommit/check_for_existing_images.sh

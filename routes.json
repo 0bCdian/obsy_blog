@@ -1,0 +1,10 @@
+[
+  {
+    "url": "/",
+    "component": "index.astro"
+  },
+  {
+    "url": "/about",
+    "component": "about.astro"
+  }
+]

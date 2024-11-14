@@ -1,0 +1,33 @@
+name: Staging deploy pipeline
+
+on: pull_request
+
+jobs:
+  staging-deploy:
+    runs-on: ubuntu-latest
+    environment: staging
+    env:
+      REGISTRY_NAME: ${{ vars.REGISTRY_NAME }}
+      GCP_PROJECT: ${{ vars.GCP_PROJECT }}
+      GCP_APPLICATION: ${{ vars.GCP_APPLICATION }}
+      GCP_REPOSITORY: ${{ vars.GCP_REPOSITORY }}
+    steps:
+      - uses: actions/checkout@v4
+      - id: "auth"
+        name: "Authenticate to Google Cloud"
+        uses: "google-github-actions/auth@v2"
+        with:
+          credentials_json: "${{ secrets.GCP_CREDENTIALS }}"
+      - name: "Publishing image"
+        run: |
+          gcloud auth configure-docker "${{ env.REGISTRY_NAME }}"
+          ./scripts/gh_actions/publish-image
+      - name: "Deploy image to staging"
+        run: |
+          gcloud config set run/region "${{ env.GCP_REGION }}"
+          ./scripts/gh_actions/deploy-image
+      - name: "Upload url to artifacts"
+        uses: actions/upload-artifact@v4
+        with:
+          name: staging-url
+          path: url.txt
