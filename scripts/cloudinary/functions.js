@@ -116,6 +116,8 @@ function getBlogPathWithImages(basePath) {
 function isDir(filePath) {
   try {
     return lstatSync(filePath).isDirectory();
+    /* eslint-disable */
+    // We purposefully ignore the error as we don't care about the reason.
   } catch (e) {
     return false;
   }
