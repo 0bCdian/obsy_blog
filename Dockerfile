@@ -2,7 +2,7 @@
 FROM node:iron-bullseye AS base
 WORKDIR /app
 COPY . .
-RUN npm install && npm run build
+RUN npm ci && npm run build
 
 # Runtime stage for serving the application
 FROM nginx:mainline-alpine-slim AS runtime
