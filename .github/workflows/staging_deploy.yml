@@ -21,11 +21,11 @@ jobs:
       - name: "Publishing image"
         run: |
           gcloud auth configure-docker "${{ env.REGISTRY_NAME }}"
-          ./scripts/gh_actions/publish-image
+          ./scripts/gh_actions/publish-image.sh
       - name: "Deploy image to staging"
         run: |
           gcloud config set run/region "${{ env.GCP_REGION }}"
-          ./scripts/gh_actions/deploy-image
+          ./scripts/gh_actions/deploy-image.sh
       - name: "Upload url to artifacts"
         uses: actions/upload-artifact@v4
         with:

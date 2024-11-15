@@ -24,5 +24,5 @@ jobs:
           credentials_json: "${{ secrets.GCP_CREDENTIALS }}"
       - name: "Cleanup staging environment"
         run: |
-          ./scripts/gh_actions/delete-image
-          ./scripts/gh_actions/delete-service
+          ./scripts/gh_actions/delete-image.sh
+          ./scripts/gh_actions/delete-service.sh
