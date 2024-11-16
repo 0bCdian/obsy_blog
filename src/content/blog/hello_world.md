@@ -58,13 +58,13 @@ I could call myself competent with:
 
 <!-- markdownlint-disable MD013 -->
 
-| **Category**          | **Tools/Technologies**                                                                                                                                                                                                     |
-| --------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Languages**         | Typescript, Javascript, Python, Bash, and currently learning Go.                                                                                                                                                           |
-| **Frameworks**        | React, Astro, Electron, ExpressJs, Flask.                                                                                                                                                                                  |
-| **Databases** | Sqlite, PostgreSQL, MongoDB.                                                                                                                                                                                               |
-| **Cloud & CI/CD**     | Terraform, OpenTofu (OpenSource™️ Terraform), Google Cloud Platform (soon [certified cloud architect](https://cloud.google.com/learn/certification/cloud-architect)), GitHub Actions, AWS, Docker and friends, Kubernetes. |
-| **Others**            | Linux, Nodejs, awk, sed, jq, curl, etc.                                                                                                                                                                                    |
+| **Category**      | **Tools/Technologies**                                                                                                                                                                                                     |
+| ----------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Languages**     | Typescript, Javascript, Python, Bash, and currently learning Go.                                                                                                                                                           |
+| **Frameworks**    | React, Astro, Electron, ExpressJs, Flask.                                                                                                                                                                                  |
+| **Databases**     | Sqlite, PostgreSQL, MongoDB.                                                                                                                                                                                               |
+| **Cloud & CI/CD** | Terraform, OpenTofu (OpenSource™️ Terraform), Google Cloud Platform (soon [certified cloud architect](https://cloud.google.com/learn/certification/cloud-architect)), GitHub Actions, AWS, Docker and friends, Kubernetes. |
+| **Others**        | Linux, Nodejs, awk, sed, jq, curl, etc.                                                                                                                                                                                    |
 
 ## `cat my_learning_resources.txt`
 
