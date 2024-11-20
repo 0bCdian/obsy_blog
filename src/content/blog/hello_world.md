@@ -1,7 +1,7 @@
 ---
 author: Diego Parra
 pubDatetime: 2024-11-15T13:06:20.000+01:00
-modDatetime: 2024-11-16T17:42:04.745Z
+modDatetime: 2024-11-20T10:27:34.679Z
 title: hello_world.sh
 featured: true
 draft: false
@@ -127,7 +127,7 @@ Here's a summary of my interests:
 
 <!-- markdownlint-disable MD033 -->
 
-<video autoplay muted="muted" plays-inline="true" class="border border-skin-line">
+<video loop autoplay muted="muted" plays-inline="true" class="border border-skin-line">
 <source
   src="https://res.cloudinary.com/dn4loabuq/video/upload/untitled_ufbba8.mp4"
   type="video/mp4"
