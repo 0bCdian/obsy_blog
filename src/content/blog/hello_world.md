@@ -1,7 +1,7 @@
 ---
 author: Diego Parra
 pubDatetime: 2024-11-15T13:06:20.000+01:00
-modDatetime: 2024-11-20T10:27:34.679Z
+modDatetime: 2025-01-20T12:21:31.884Z
 title: hello_world.sh
 featured: true
 draft: false
@@ -21,7 +21,7 @@ description: Let's start with the introductions shall we?
 
 ## `whoami`
 
-Hi! I'm Diego, a self-taught software engineer with 2+ years of experience, I
+Hi! I'm Diego, a self-taught software engineer with 3+ years of experience, I
 mainly focus on web development, but recently have leaned a bit towards DevOps
 and cloud development. I started my journey with
 [freecodecamp](https://www.freecodecamp.org/) and their course on HTML and CSS,
@@ -63,8 +63,8 @@ I could call myself competent with:
 | **Languages**     | Typescript, Javascript, Python, Bash, and currently learning Go.                                                                                                                                                           |
 | **Frameworks**    | React, Astro, Electron, ExpressJs, Flask.                                                                                                                                                                                  |
 | **Databases**     | Sqlite, PostgreSQL, MongoDB.                                                                                                                                                                                               |
-| **Cloud & CI/CD** | Terraform, OpenTofu (OpenSource™️ Terraform), Google Cloud Platform (soon [certified cloud architect](https://cloud.google.com/learn/certification/cloud-architect)), GitHub Actions, AWS, Docker and friends, Kubernetes. |
-| **Others**        | Linux, Nodejs, awk, sed, jq, curl, etc.                                                                                                                                                                                    |
+| **Cloud & CI/CD** | Terraform, OpenTofu (OpenSource™️ Terraform), Google Cloud Platform ([certified cloud architect](https://www.credly.com/badges/d55110ec-00bd-4209-b8cc-2d1b2ebfe3ab/public_url)), GitHub Actions, AWS, Docker and friends, Kubernetes. |
+| **Others**        | Linux, Nodejs, Bun, awk, sed, jq, curl, etc.                                                                                                                                                                                    |
 
 ## `cat my_learning_resources.txt`
 
@@ -82,10 +82,14 @@ And everything else was mostly me trying something new and reading the docs.
 
 ## `pwd`
 
-I'm currently finishing a DevOps bootcamp at [boolean](https://boolean.cl) and
-also preparing for a Google Cloud certification via the innovators
-[get certified](https://cloud.google.com/innovators/getcertified?hl=en) program.
+>I'm currently finishing a DevOps bootcamp at [boolean](https://boolean.cl) and
+>also preparing for a Google Cloud certification via the innovators
+>[get certified](https://cloud.google.com/innovators/getcertified?hl=en) program.
 Other than that I'm still searching for my first official developer role.
+
+*2025 update*: I already finished [the bootcamp](https://boolean.cl/certs/devops-ci-cd/g04/bea09c33718bfc8133b35cfb90307446/) and got the [google certification](https://www.credly.com/badges/d55110ec-00bd-4209-b8cc-2d1b2ebfe3ab/public_url) 🎉
+
+I'm still searching for a job though 😅
 
 ## `tree ~/Documents/interests`
 
@@ -145,15 +149,15 @@ In short, this is what I use every day in my dev setup:
 | **Editor**                | Neovim (btw)                                                      |
 | **Operating System**      | Arch Linux (btw)                                                  |
 | **Window Manager**        | Hyprland                                                          |
-| **Terminal**              | Kitty                                                             |
+| **Terminal**              | Kitty,Ghostty                                                             |
 | **File Explorer**         | Yazi                                                              |
 | **Terminal Multiplexer**  | Tmux                                                              |
 | **Shell**                 | Fish shell                                                        |
-| **Keyboard remapper**     | Kanata (For using homerow mods in my non qmk/zmk keyboard)        |
+| **Keyboard**             | Corne (And Kanata for using homerow mods in my laptop keyboard)        |
 | **Dotfiles Management**   | GNU Stow                                                          |
 | **Preferred colorscheme** | [Gruvbox material](https://github.com/sainnhe/gruvbox-material)   |
 | **Preferred font**        | Jetbrains mono                                                    |
-| **Browsers of Choice**    | Thorium + Zen Browser                                             |
+| **Browsers of Choice**    | Brave + Zen Browser                                             |
 | **Dotfiles Repository**   | [GitHub: 0bCdian/.dotfiles](https://github.com/0bCdian/.dotfiles) |
 
 ![2024-11-15-at-23-36-26.avif](https://res.cloudinary.com/dn4loabuq/image/upload/s--PG3dUacJ--/f_webp,q_auto/kkee86qcw2kslhxfthqu?_a=BAMCkGJu0)

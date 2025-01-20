@@ -109,7 +109,20 @@ const structuredData = {
       is:inline
       set:html={JSON.stringify(structuredData)}
     />
+    <!-- Google tag (gtag.js) -->
 
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-R8V81P24YD"
+    ></script>
+    <script>
+      /** eslint-ignore  **/
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-R8V81P24YD");
+    </script>
     <!-- Google Font -->
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
