@@ -58,13 +58,13 @@ I could call myself competent with:
 
 <!-- markdownlint-disable MD013 -->
 
-| **Category**      | **Tools/Technologies**                                                                                                                                                                                                     |
-| ----------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Languages**     | Typescript, Javascript, Python, Bash, and currently learning Go.                                                                                                                                                           |
-| **Frameworks**    | React, Astro, Electron, ExpressJs, Flask.                                                                                                                                                                                  |
-| **Databases**     | Sqlite, PostgreSQL, MongoDB.                                                                                                                                                                                               |
+| **Category**      | **Tools/Technologies**                                                                                                                                                                                                                 |
+| ----------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Languages**     | Typescript, Javascript, Python, Bash, and currently learning Go.                                                                                                                                                                       |
+| **Frameworks**    | React, Astro, Electron, ExpressJs, Flask.                                                                                                                                                                                              |
+| **Databases**     | Sqlite, PostgreSQL, MongoDB.                                                                                                                                                                                                           |
 | **Cloud & CI/CD** | Terraform, OpenTofu (OpenSource™️ Terraform), Google Cloud Platform ([certified cloud architect](https://www.credly.com/badges/d55110ec-00bd-4209-b8cc-2d1b2ebfe3ab/public_url)), GitHub Actions, AWS, Docker and friends, Kubernetes. |
-| **Others**        | Linux, Nodejs, Bun, awk, sed, jq, curl, etc.                                                                                                                                                                                    |
+| **Others**        | Linux, Nodejs, Bun, awk, sed, jq, curl, etc.                                                                                                                                                                                           |
 
 ## `cat my_learning_resources.txt`
 
@@ -82,12 +82,12 @@ And everything else was mostly me trying something new and reading the docs.
 
 ## `pwd`
 
->I'm currently finishing a DevOps bootcamp at [boolean](https://boolean.cl) and
->also preparing for a Google Cloud certification via the innovators
->[get certified](https://cloud.google.com/innovators/getcertified?hl=en) program.
-Other than that I'm still searching for my first official developer role.
+> I'm currently finishing a DevOps bootcamp at [boolean](https://boolean.cl) and
+> also preparing for a Google Cloud certification via the innovators
+> [get certified](https://cloud.google.com/innovators/getcertified?hl=en) program.
+> Other than that I'm still searching for my first official developer role.
 
-*2025 update*: I already finished [the bootcamp](https://boolean.cl/certs/devops-ci-cd/g04/bea09c33718bfc8133b35cfb90307446/) and got the [google certification](https://www.credly.com/badges/d55110ec-00bd-4209-b8cc-2d1b2ebfe3ab/public_url) 🎉
+_2025 update_: I already finished [the bootcamp](https://boolean.cl/certs/devops-ci-cd/g04/bea09c33718bfc8133b35cfb90307446/) and got the [google certification](https://www.credly.com/badges/d55110ec-00bd-4209-b8cc-2d1b2ebfe3ab/public_url) 🎉
 
 I'm still searching for a job though 😅
 
@@ -149,15 +149,15 @@ In short, this is what I use every day in my dev setup:
 | **Editor**                | Neovim (btw)                                                      |
 | **Operating System**      | Arch Linux (btw)                                                  |
 | **Window Manager**        | Hyprland                                                          |
-| **Terminal**              | Kitty,Ghostty                                                             |
+| **Terminal**              | Kitty,Ghostty                                                     |
 | **File Explorer**         | Yazi                                                              |
 | **Terminal Multiplexer**  | Tmux                                                              |
 | **Shell**                 | Fish shell                                                        |
-| **Keyboard**             | Corne (And Kanata for using homerow mods in my laptop keyboard)        |
+| **Keyboard**              | Corne (And Kanata for using homerow mods in my laptop keyboard)   |
 | **Dotfiles Management**   | GNU Stow                                                          |
 | **Preferred colorscheme** | [Gruvbox material](https://github.com/sainnhe/gruvbox-material)   |
 | **Preferred font**        | Jetbrains mono                                                    |
-| **Browsers of Choice**    | Brave + Zen Browser                                             |
+| **Browsers of Choice**    | Brave + Zen Browser                                               |
 | **Dotfiles Repository**   | [GitHub: 0bCdian/.dotfiles](https://github.com/0bCdian/.dotfiles) |
 
 ![2024-11-15-at-23-36-26.avif](https://res.cloudinary.com/dn4loabuq/image/upload/s--PG3dUacJ--/f_webp,q_auto/kkee86qcw2kslhxfthqu?_a=BAMCkGJu0)
