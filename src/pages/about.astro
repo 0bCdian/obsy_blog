@@ -1,0 +1,38 @@
+---
+import Layout from "@layouts/Layout.astro";
+import Header from "@components/Header.astro";
+import Footer from "@components/Footer.astro";
+import Main from "@layouts/Main.astro";
+import LinkButton from "@components/LinkButton.astro";
+---
+
+<Layout>
+  <Header activeNav="about" />
+  <Main pageTitle={"Why"} pageDesc={"Are we still here, just to suffer..."}>
+    <p>I decided to build a blog for two main reasons:</p>
+    <br />
+    <ul class="mx-6 flex list-disc flex-col gap-5">
+      <li>
+        I really like sharing knowledge and telling people about stuff I come
+        across or things that excite me.
+      </li>
+      <li>
+        To "put myself out there" so to speak. I want to build an online
+        presence as a means to market myself, and to collaborate with others.
+      </li>
+    </ul>
+    <h2 class="mb-5 mt-10 text-2xl font-medium">Where can you contact me</h2>
+    <p class="mt-5">
+      If you want to know more about me feel free to contact me, the links are
+      in the footer.
+    </p>
+    <p class="mb-2">
+      You can also take a look at my <LinkButton
+        className="link-button underline decoration-dashed underline-offset-8"
+        href="https://registry.jsonresume.org/0bCdian"
+        >resume/portfolio
+      </LinkButton>.
+    </p>
+  </Main>
+  <Footer />
+</Layout>
