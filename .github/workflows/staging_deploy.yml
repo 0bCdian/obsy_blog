@@ -9,12 +9,12 @@ on:
       - reopened
 
 jobs:
-  linter:
-    uses: ./.github/workflows/linter.yml
+  code_standards:
+    uses: ./.github/workflows/code_standards.yml
   staging-deploy:
     runs-on: ubuntu-latest
     environment: staging
-    needs: [linter]
+    needs: [code_standards]
     env:
       REGISTRY_NAME: ${{ vars.REGISTRY_NAME }}
       GCP_PROJECT: ${{ vars.GCP_PROJECT }}
