@@ -8,45 +8,45 @@ import { SITE } from "./src/config";
 import { readFileSync } from "fs";
 import { fileURLToPath } from "url";
 const gruvboxMaterialDark = JSON.parse(
-	readFileSync(
-		fileURLToPath(
-			new URL("./themes/gruvbox-material-dark.json", import.meta.url),
-		),
-		"utf-8",
-	),
+  readFileSync(
+    fileURLToPath(
+      new URL("./themes/gruvbox-material-dark.json", import.meta.url)
+    ),
+    "utf-8"
+  )
 );
 
 // https://astro.build/config
 export default defineConfig({
-	site: SITE.website,
-	output: "static",
-	integrations: [
-		tailwind({
-			applyBaseStyles: false,
-		}),
-		react(),
-		sitemap(),
-	],
-	markdown: {
-		remarkPlugins: [
-			remarkToc,
-			[
-				remarkCollapse,
-				{
-					test: "Table of contents",
-				},
-			],
-		],
-		shikiConfig: {
-			// For more themes, visit https://shiki.style/themes
-			themes: { light: gruvboxMaterialDark, dark: gruvboxMaterialDark },
-			wrap: true,
-		},
-	},
-	vite: {
-		optimizeDeps: {
-			exclude: ["@resvg/resvg-js"],
-		},
-	},
-	scopedStyleStrategy: "where",
+  site: SITE.website,
+  output: "static",
+  integrations: [
+    tailwind({
+      applyBaseStyles: false,
+    }),
+    react(),
+    sitemap(),
+  ],
+  markdown: {
+    remarkPlugins: [
+      remarkToc,
+      [
+        remarkCollapse,
+        {
+          test: "Table of contents",
+        },
+      ],
+    ],
+    shikiConfig: {
+      // For more themes, visit https://shiki.style/themes
+      themes: { light: gruvboxMaterialDark, dark: gruvboxMaterialDark },
+      wrap: true,
+    },
+  },
+  vite: {
+    optimizeDeps: {
+      exclude: ["@resvg/resvg-js"],
+    },
+  },
+  scopedStyleStrategy: "where",
 });
