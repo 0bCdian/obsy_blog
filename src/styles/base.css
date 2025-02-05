@@ -122,6 +122,9 @@
     text-decoration: var(--shiki-dark-text-decoration) !important;
   }
 }
+::view-transition-old(cover_3aPetcube_20Tracker) {
+  animation: none;
+}
 
 @layer components {
   .display-none {
