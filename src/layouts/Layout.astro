@@ -135,10 +135,9 @@ const structuredData = {
     }
 
     <ClientRouter />
-    <Analytics />
-    <script is:inline src="/toggle-theme.js"></script>
   </head>
   <body>
     <slot />
+    <Analytics mode="production" />
   </body>
 </html>
