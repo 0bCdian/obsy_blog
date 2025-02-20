@@ -3,7 +3,7 @@
     "actionBar.toggledBackground": "#3c3836",
     "activityBarBadge.background": "#a9b665",
     "checkbox.border": "#a89984",
-    "editor.background": "#282828",
+    "editor.background": "#232323",
     "editor.foreground": "#d4be98",
     "editor.inactiveSelectionBackground": "#504945",
     "editor.selectionHighlightBackground": "#d8a65726",
@@ -37,7 +37,12 @@
   },
   "tokenColors": [
     {
-      "scope": ["meta.embedded", "source.groovy.embedded", "string meta.image.inline.markdown", "variable.legacy.builtin.python"],
+      "scope": [
+        "meta.embedded",
+        "source.groovy.embedded",
+        "string meta.image.inline.markdown",
+        "variable.legacy.builtin.python"
+      ],
       "settings": {
         "foreground": "#d4be98"
       }
@@ -73,7 +78,12 @@
       }
     },
     {
-      "scope": ["constant.numeric", "variable.other.enummember", "keyword.operator.plus.exponent", "keyword.operator.minus.exponent"],
+      "scope": [
+        "constant.numeric",
+        "variable.other.enummember",
+        "keyword.operator.plus.exponent",
+        "keyword.operator.minus.exponent"
+      ],
       "settings": {
         "foreground": "#d3869b"
       }

@@ -5,9 +5,9 @@
 @layer base {
   :root,
   html[data-theme="dark"] {
-    --color-fill: 30, 28, 27;
+    --color-fill: 40, 40, 40;
     --color-text-base: 235, 219, 178;
-    --color-accent: 250, 189, 47;
+    --color-accent: 210, 164, 89;
     --color-card: 60, 56, 54;
     --color-card-muted: 80, 73, 69;
     --color-border: 102, 92, 84;
@@ -22,7 +22,6 @@
     --color-border: 189, 174, 147;
     --color-logo: 80, 84, 0;
   }
-
   #sun-svg,
   html[data-theme="dark"] #moon-svg {
     display: none;
@@ -130,4 +129,29 @@
   .focus-outline {
     @apply outline-2 outline-offset-1 outline-skin-fill focus-visible:no-underline focus-visible:outline-dashed;
   }
+}
+
+ins {
+  text-decoration-style: wavy;
+  text-underline-offset: 4px;
+}
+em {
+  border-radius: 5px;
+  padding: 0 0.5rem;
+}
+
+img,
+video {
+  border: none;
+  /*border-width:0.5px !important;*/
+  /*border-color:#d4be9855 !important;*/
+  border-radius: 0.375rem;
+  box-shadow:
+    0.7px 1.4px 9.7px -4px rgba(0, 0, 0, 0.526),
+    4px 8.1px 14.2px -4px rgba(0, 0, 0, 0.612),
+    5.1px 10.1px 17.3px -4px rgba(0, 0, 0, 0.574),
+    5px 10px 30px -4px rgba(0, 0, 0, 0.47);
+}
+:target {
+  scroll-margin-top: 2.5rem;
 }
