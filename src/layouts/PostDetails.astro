@@ -1,4 +1,5 @@
 ---
+import SymbolNavigator from "@components/SymbolsNavigator";
 import Layout from "@layouts/Layout.astro";
 import Header from "@components/Header.astro";
 import Footer from "@components/Footer.astro";
@@ -64,7 +65,7 @@ const nextPost =
 
 <Layout {...layoutProps}>
   <Header />
-
+  <SymbolNavigator client:load />
   <div class="mx-auto flex w-full max-w-3xl justify-start px-2">
     <button
       class="focus-outline mb-2 mt-8 flex hover:opacity-75"

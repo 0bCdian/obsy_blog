@@ -21,7 +21,7 @@ webpage on it.
 
 ## Table of contents
 
-## Ok but what is github pages?
+## Ok but what is Github Pages?
 
 Per the
 [official documentation](https://docs.github.com/en/pages/getting-started-with-github-pages/about-github-pages):
@@ -32,7 +32,7 @@ Per the
 
 Or in fewer words: Free hosting baby 🚀📈
 
-## Should you learn github pages?
+## Should you learn Github Pages?
 
 The short answer? Yes.
 <br/> The long answer? Yeeeeeeeeesssss.
@@ -72,7 +72,7 @@ But now you are probably wondering "how do we use this thing?".
 
 > FACT: Bears. Eat. Beets.
 
-We have two approaches for deploying on github pages:
+We have two approaches for deploying on Github Pages:
 
 ### `The classic way`
 
