@@ -443,7 +443,7 @@ to learn more about github action workflows.
 
 Now let's get down to business.
 
-## 4..3..2..1... Deploy 🚀
+## 4..3..2..1.. Deploy!! 🚀
 
 Now back on our local repo, let's write the workflow for deploying our site.
 
@@ -581,7 +581,7 @@ on purpose_<ins/>
 <img alt="cat huh meme" src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExNTMwaTV2ZDJkc3E1ZGZ1NXB6a3FiZnp1M3gxamVmbTVncDE4aW42NyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/GRk3GLfzduq1NtfGt5/giphy.gif"/>
 
 If you paid attention, in the trigger we specified a `path` condition, so not
-only do we have to push to main, we need to push changes to `/src/**`
+only do we have to push to main, we also have to push changes to `/src/**`
 specifically for the workflow to run.
 
 ```yaml
