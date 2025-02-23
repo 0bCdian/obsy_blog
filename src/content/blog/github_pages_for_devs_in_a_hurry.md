@@ -363,7 +363,8 @@ and `run`:
 ### And what is an action then? You may ask
 
 You can think of an action as a song, and a workflow as a playlist. In more
-technical terms, an action is a self contained piece of code meant to be run a
+technical terms, an action is a self contained piece of code meant to be run as
+a
 step in a larger workflow. There's actually a
 [marketplace](https://github.com/marketplace?type=actions) for actions and
 Github itself maintains quite a lot of [them](https://github.com/actions). The
