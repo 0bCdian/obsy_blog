@@ -6,8 +6,8 @@ export function setupVimNavigation() {
     // Ignore if we're in an input or textarea
     if (e.target instanceof HTMLElement) {
       if (
-        e.target.tagName === 'INPUT' ||
-        e.target.tagName === 'TEXTAREA' ||
+        e.target.tagName === "INPUT" ||
+        e.target.tagName === "TEXTAREA" ||
         e.target.isContentEditable
       ) {
         return;
@@ -29,7 +29,7 @@ export function setupVimNavigation() {
       window.scrollTo({
         top: document.documentElement.scrollHeight,
         left: 0,
-        behavior: "smooth"
+        behavior: "smooth",
       });
       return;
     }
@@ -41,7 +41,7 @@ export function setupVimNavigation() {
         window.scrollTo({
           top: 0,
           left: 0,
-          behavior: "smooth"
+          behavior: "smooth",
         });
         gKeyPressed = false;
         if (gKeyTimeout) clearTimeout(gKeyTimeout);
@@ -66,9 +66,9 @@ export function setupVimNavigation() {
     }
 
     // Create new observer to watch for reading mode changes
-    observer = new MutationObserver((mutations) => {
+    observer = new MutationObserver(mutations => {
       for (const mutation of mutations) {
-        if (mutation.type === 'childList') {
+        if (mutation.type === "childList") {
           // Re-attach event listener when document structure changes
           window.removeEventListener("keydown", handleKeydown);
           window.addEventListener("keydown", handleKeydown);
@@ -79,7 +79,7 @@ export function setupVimNavigation() {
     // Observe the document body for changes
     observer.observe(document.body, {
       childList: true,
-      subtree: true
+      subtree: true,
     });
   }
 

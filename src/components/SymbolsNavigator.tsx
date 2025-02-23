@@ -11,11 +11,12 @@ export default function SymbolNavigator() {
   const [headings, setHeadings] = useState<HeadingData>([]);
   const [selectedIndex, setSelectedIndex] = useState(0);
   const listRef = useRef<HTMLUListElement>(null);
+  const itemRefs = useRef<(HTMLLIElement | null)[]>([]);
   const close = () => {
-    setIsOpen(false)
-    setSearch("")
-    setSelectedIndex(0)
-  }
+    setIsOpen(false);
+    setSearch("");
+    setSelectedIndex(0);
+  };
   // fetch headings
   useEffect(() => {
     const headingElements = Array.from(
@@ -24,17 +25,15 @@ export default function SymbolNavigator() {
       )
     );
 
-    const headingData = headingElements.map((heading) => ({
+    const headingData = headingElements.map(heading => ({
       text: heading.textContent?.replace("#", ""),
-      id:
-        heading.id ||
-        heading.textContent?.replace(/\s+/g, "-").toLowerCase(),
+      id: heading.id || heading.textContent?.replace(/\s+/g, "-").toLowerCase(),
     }));
 
     setHeadings(headingData);
   }, []);
 
-  const filteredHeadings = headings.filter((h) =>
+  const filteredHeadings = headings.filter(h =>
     h.text?.toLowerCase().includes(search.toLowerCase())
   );
   useEffect(() => {
@@ -43,16 +42,16 @@ export default function SymbolNavigator() {
         e.preventDefault();
         setIsOpen(true);
       } else if (e.key === "Escape" && isOpen) {
-        close()
+        close();
       } else if (isOpen) {
         if (e.key === "ArrowDown" || e.key === "j") {
           e.preventDefault();
-          setSelectedIndex((prev) =>
+          setSelectedIndex(prev =>
             Math.min(prev + 1, filteredHeadings.length - 1)
           );
         } else if (e.key === "ArrowUp" || e.key === "k") {
           e.preventDefault();
-          setSelectedIndex((prev) => Math.max(prev - 1, 0));
+          setSelectedIndex(prev => Math.max(prev - 1, 0));
         }
       }
     }
@@ -60,6 +59,14 @@ export default function SymbolNavigator() {
     window.addEventListener("keydown", handleKeydown);
     return () => window.removeEventListener("keydown", handleKeydown);
   }, [isOpen, filteredHeadings.length]);
+  useEffect(() => {
+    if (itemRefs.current[selectedIndex]) {
+      itemRefs.current[selectedIndex]?.scrollIntoView({
+        block: "center",
+        behavior: "smooth",
+      });
+    }
+  }, [selectedIndex]);
 
   return (
     <>
@@ -71,29 +78,39 @@ export default function SymbolNavigator() {
             className="block w-full placeholder-[#ebddb299] rounded border border-skin-fill/40 bg-skin-fill py-2 px-5 pr-3 placeholder:italic focus:border-skin-accent focus:outline-none"
             placeholder="Search headings..."
             value={search}
-            onChange={(e) => {
+            onChange={e => {
               setSearch(e.target.value);
-              setSelectedIndex(0)
+              setSelectedIndex(0);
             }}
-            onKeyDown={(e) => {
+            onKeyDown={e => {
               if (e.key === "Enter") {
                 e.preventDefault();
-                if (filteredHeadings[selectedIndex]) {
-                  window.location.hash = `#${filteredHeadings[selectedIndex].id}`;
-                  close()
+                const selectedItem = itemRefs.current[selectedIndex];
+                if (selectedItem) {
+                  const link = selectedItem.querySelector("a");
+                  link?.click();
+                  close();
                 }
               }
             }}
           />
-          <ul ref={listRef} className="overflow-y-hidden">
+          <ul ref={listRef} className="overflow-y-scroll max-h-[42rem] pr-5">
             {filteredHeadings.map((h, index) => (
-              <li key={h.id} className="first:mt-5" onClick={() => close()}>
+              <li
+                ref={el => {
+                  itemRefs.current[index] = el;
+                }}
+                key={h.id}
+                className="first:mt-5"
+                onClick={() => close()}
+              >
                 <a
                   href={`#${h.id}`}
-                  className={`block w-full my-2 text-left p-1 rounded ${index === selectedIndex
-                    ? "bg-[#3D3935]"
-                    : "hover:bg-[#453d39]"
-                    }`}
+                  className={`block w-full my-2 text-left p-1 rounded ${
+                    index === selectedIndex
+                      ? "bg-[#3D3935]"
+                      : "hover:bg-[#453d39]"
+                  }`}
                 >
                   {h.text}
                 </a>
@@ -105,4 +122,3 @@ export default function SymbolNavigator() {
     </>
   );
 }
-
