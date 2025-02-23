@@ -21,7 +21,7 @@ our first webpage on it.
 
 ## Table of contents
 
-## Ok but what is Github Pages?
+## OK, But What Is Github Pages?
 
 Per the
 [official documentation](https://docs.github.com/en/pages/getting-started-with-github-pages/about-github-pages):
@@ -30,14 +30,14 @@ Per the
 > JavaScript files straight from a repository on GitHub, optionally runs the
 > files through a build process, and publishes a website.
 
-Or in fewer words: Free hosting baby 🚀📈
+Or in fewer words, free hosting baby 🚀📈
 
 ## Should you learn Github Pages?
 
 The short answer? Yes.
 <br/> The long answer? Yeeeeeeeeesssss.
 
-<em style="background-color:#E26D63;color:#282828">Hot take</em> Any dev who's
+<em style="background-color:#E26D63;color:#282828">Hot take</em> Any developer
 worth their salt should be proficient with the tools they use, or at the very
 least be aware of the capabilities of said tools, GitHub being one of the most
 used by more than
@@ -48,7 +48,7 @@ knowing more stuff == good,
 Anyways, here are some arguments I think will convince you of at least trying it
 out:
 
-1. You won't get a crippling bill if someone decides to DDOS your TODO react
+1. You won't get a crippling bill if someone decides to DDoS your TODO react
    app.
 2. It's super simple.
 3. Costs 0 dollars.
@@ -59,7 +59,7 @@ out:
 7. Without a doubt the best place to host documentation for your projects.
 8. You clicked on the post already, may as well finish reading it.
 
-I hope my sales pitch was effective and you're already convinced to try it out.
+I hope my sales pitch was effective and you are already convinced to try it out.
 <img src="https://i.imgflip.com/9jydcb.jpg" width=400 alt="Cutting meat with a
   sword"/>
 
@@ -133,7 +133,7 @@ actions, but _yeah well that's just like my opinion man_. You can read about it
 
 First of all I will assume you have a basic understanding of how web frameworks
 work as well as basic git and github for this section (You know how to git push
-to a remote repository).
+to a remote repository). You can take a look at the finished repo [here](https://github.com/0bCdian/github-pages-example)
 
 ### 1. Setup the repo
 
