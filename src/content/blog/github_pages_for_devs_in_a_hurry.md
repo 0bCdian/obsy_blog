@@ -1,6 +1,6 @@
 ---
 author: Diego Parra
-pubDatetime: 2025-02-22T21:41:57.000+01:00
+pubDatetime: 2025-02-23T13:56:51.000+01:00
 modDatetime:
 title: Github Pages for devs in a hurry
 featured: false
@@ -15,9 +15,9 @@ description: Let's go, in n' out, 20 minutes adventure!
 ---
 
 Github Pages is a hidden gem that I don't see many people taking advantage of.
-It is a great platform to host your projects' documentation, or any website for
-free! I'll try my best to explain how to use it, and we'll deploy our first
-webpage on it.
+It is a great platform to host your projects' documentation, or any static
+website for free! I'll try my best to explain how to use it, and we'll deploy
+our first webpage on it.
 
 ## Table of contents
 
@@ -37,10 +37,10 @@ Or in fewer words: Free hosting baby 🚀📈
 The short answer? Yes.
 <br/> The long answer? Yeeeeeeeeesssss.
 
-⚠️ <em style="background-color:#E26D63;color:#282828">Hot take</em> ⚠️ Any dev
-who's worth their salt should be proficient with the tools they use, or at the
-very least be aware of the capabilities of said tools, GitHub being one of the
-most used by more than
+<em style="background-color:#E26D63;color:#282828">Hot take</em> Any dev who's
+worth their salt should be proficient with the tools they use, or at the very
+least be aware of the capabilities of said tools, GitHub being one of the most
+used by more than
 [100 million of us](https://github.blog/news-insights/company-news/100-million-developers-and-counting/),
 knowing more stuff == good,
 <em style="background-color:#8BB180;color:#282828">controversial I know</em>.
@@ -57,8 +57,7 @@ out:
 5. IMO for most websites, PaaS offerings are like using a cannon to kill a fly.
 6. Your portfolio probably doesn't need a SLA of 99.9% uptime.
 7. Without a doubt the best place to host documentation for your projects.
-8. You clicked on the post already, may as well finish reading
-   it.
+8. You clicked on the post already, may as well finish reading it.
 
 I hope my sales pitch was effective and you're already convinced to try it out.
 <img src="https://i.imgflip.com/9jydcb.jpg" width=400 alt="Cutting meat with a
@@ -133,8 +132,8 @@ actions, but _yeah well that's just like my opinion man_. You can read about it
 ## The boilerplate
 
 First of all I will assume you have a basic understanding of how web frameworks
-work as well as basic git and github for this section (You know how to git push to a remote
-repository).
+work as well as basic git and github for this section (You know how to git push
+to a remote repository).
 
 ### 1. Setup the repo
 
@@ -211,13 +210,16 @@ And that's it, that's all the boilerplate we need to start working:
 ### 3. Vite specific config
 
 The base default path for vite is `/` but our deployment url will look something
-like this: `https://<USERNAME>.github.io/<REPO>/`. Leaving this base path will means the browser will try to fetch static files from
-`https://<USERNAME>.github.io/style.css` instead of `https://<USERNAME>.github.io/<REPO>/style.css`, for example, leading to a 404. Read more about url
-paths [here](https://www.w3schools.com/html/html_filepaths.asp).
+like this: `https://<USERNAME>.github.io/<REPO>/`. Leaving this base path will
+means the browser will try to fetch static files from
+`https://<USERNAME>.github.io/style.css` instead of
+`https://<USERNAME>.github.io/<REPO>/style.css`, for example, leading to a 404.
+Read more about url paths
+[here](https://www.w3schools.com/html/html_filepaths.asp).
 
-Having explained the why, let's now
-configure the `base` property in the configuration file (`vite.config.ts` in my
-case) to use the name of our repo, in my case `/github-pages-example/`:
+Having explained the why, let's now configure the `base` property in the
+configuration file (`vite.config.ts` in my case) to use the name of our repo, in
+my case `/github-pages-example/`:
 
 ![2025-02-23-at-02-02-43.avif](https://res.cloudinary.com/dn4loabuq/image/upload/s--raW6zSaN--/f_webp,q_auto/vfpqveejxcammg4ydexh?_a=BAMCkGUq0)
 
@@ -273,8 +275,8 @@ But first...
 ![ibai.gif](https://res.cloudinary.com/dn4loabuq/image/upload/s--Y6SjLtqw--/f_webp,q_auto/dgozaoj1aubrmoauo27t?_a=BAMCkGUq0)
 
 If you're already familiar with github actions feel free to
-[skip ahead](#4321-deploy), for everyone else here's the quick and
-dirty explanation:
+[skip ahead](#4321-deploy), for everyone else here's the quick and dirty
+explanation:
 
 Github actions is a CI/CD platform for automating your workflows, without
 getting into much detail, it boils down to writing configuration files that
@@ -341,7 +343,7 @@ jobs:
       - run: echo "🍏 This job's status is ${{ job.status }}."
 ```
 
-There's a lot to unpack here but the general structure of job is:
+There's a lot to unpack here but the general structure of a workflow is:
 
 - The name of the workflow (optional)
 - The name of the workflow instance, or run-name (optional)
@@ -363,15 +365,14 @@ and `run`:
 ### And what is an action then? You may ask
 
 You can think of an action as a song, and a workflow as a playlist. In more
-technical terms, an action is a self contained piece of code meant to be run as
-a
-step in a larger workflow. There's actually a
+technical terms, an action is a self-contained piece of code meant to be run as
+a step in a larger workflow. There's actually a
 [marketplace](https://github.com/marketplace?type=actions) for actions and
 Github itself maintains quite a lot of [them](https://github.com/actions). The
 name of an action has the following structure `repo/action-name@version`, for
-example, `actions/checkout@v4` which clones the repo and configures the working
-directory of the machine to be the root of your repository (I would bet this is
-the most used action by far).
+example, `actions/checkout@v4` which clones the repo, and then configures the
+working directory of the machine to be the root of your repository (I would bet
+this is the most used action by far).
 
 I won't extend further as I could write a blog just on this topic,
 [refer to the docs](https://docs.github.com/en/actions/sharing-automations/creating-actions/about-custom-actions)
@@ -421,8 +422,8 @@ git push origin main
 
 ![2025-02-19-at-19-34-44.avif](https://res.cloudinary.com/dn4loabuq/image/upload/s--L6gFdx9---/f_webp,q_auto/qpmunoko5hc2an8adlix?_a=BAMCkGUq0)
 
-You will see a yellow dot on the actions tab, meaning the workflow was read
-successfully and is currently running:
+You will see a yellow dot beside the commit message, and on the actions tab as
+well, this means the workflow was read successfully and is currently running:
 ![2025-02-23-at-00-06-21.avif](https://res.cloudinary.com/dn4loabuq/image/upload/s--ij3uxtXV--/f_webp,q_auto/xz9zvdfkkzybdgd8y7tg?_a=BAMCkGUq0)
 
 Navigate to the actions tab and you should see the worfklow in action:
@@ -438,7 +439,7 @@ Navigate to the actions tab and you should see the worfklow in action:
 Congratulations, you just ran your first workflow! 🎉
 
 There's a lot more you can do with workflows, but I can't cover all of it in
-this post for brevity's sake, go the
+this post for brevity's sake, go to the
 [official documentation](https://docs.github.com/en/actions/writing-workflows/about-workflows)
 to learn more about github action workflows.
 
@@ -448,23 +449,23 @@ Now let's get down to business.
 
 Now back on our local repo, let's write the workflow for deploying our site.
 
-This is the basic overview of what we are going to be doing:
+This is the basic overview of what we are going to do:
 
 ![2025-02-18-at-22-00-16.avif](https://res.cloudinary.com/dn4loabuq/image/upload/s--XOGxk-uO--/f_webp,q_auto/ixtmalnil3xq5jepbxax?_a=BAMCkGUq0)
 
 If you check your `package.json` you will see a build command, if you run it
 vite will output a `./dist` directory with the contents of the website ready to
-serve, we are going to upload those files to an
+serve. We are going to upload those files to an
 [artifact](https://docs.github.com/en/actions/writing-workflows/choosing-what-your-workflow-does/storing-and-sharing-data-from-a-workflow)
-and deploying them using this two official github actions:
+and deploy them with the help of these two official github actions:
 
 - [`actions/upload-pages-artifact@v3`](https://github.com/actions/upload-pages-artifact)
 - [`actions/deploy-pages@v4`](https://github.com/actions/deploy-pages)
 
-The names are self explanatory but the general idea is that the first one takes
-the directory we give it as input and packages it in a specific way before
-uploading it as an artifact. The second one downloads the artifact we uploaded,
-creates a new deployment with the static files downloaded.
+The names are self-explanatory but the general idea is that the first one takes
+the directory we give it as an input, and packages it in a specific way before
+uploading it as an artifact. The second one downloads the artifact we uploaded
+before, and creates a new deployment with the static files downloaded.
 
 ### We need to make a quick stop on environments
 
@@ -474,18 +475,18 @@ creates a new deployment with the static files downloaded.
 > staging, or development. When a GitHub Actions workflow deploys to an
 > environment, the environment is displayed on the main page of the repository.
 
-The reason we need them for using github pages is because:
+The reason we need them for using Github Pages is because:
 
 ![2025-02-23-at-01-05-21.avif](https://res.cloudinary.com/dn4loabuq/image/upload/s--9F_rQAc2--/f_webp,q_auto/wolgz9bxvqg2uxd0it2b?_a=BAMCkGUq0)
 
-But really the reason lies within the capabilities that environments give you
-like branch protection rules, and variables and secrets managing, so github by
+But really, the reason lies within the capabilities that environments give you,
+like branch protection rules, variables and secrets managing, etc, so github by
 default requires that all deployments sit on top of an environment, and since we
 are going to make a deployment, we therefore need an environment.
 
 ### Back on track
 
-Let's create a file called deploy.yml (the name is arbitrary) and open it in
+Let's create a file called `deploy.yml` (the name is arbitrary) and open it in
 your favorite editor, bonus points if it's neovim (I use neovim btw):
 
 This is what we are going to paste in that file:
@@ -564,7 +565,7 @@ git push origin main
 
 ![2025-02-23-at-01-16-12.avif](https://res.cloudinary.com/dn4loabuq/image/upload/s--fQ2DHuj5--/f_webp,q_auto/hizhjiexjpwee7u6ya4a?_a=BAMCkGUq0)
 
-And then check your actions tab to witness the magic happen 🪄:
+And then check your actions tab to witness the magic happening 🪄:
 
 ![2025-02-23-at-01-19-13.avif](https://res.cloudinary.com/dn4loabuq/image/upload/s--Y0L92ZSQ--/f_webp,q_auto/c2e21q5rkmukvtcmqzok?_a=BAMCkGUq0)
 
@@ -577,7 +578,7 @@ Absolutely nothing happened:
 > You've been bamboozled
 
 Don't worry, if you've been following the tutorial step by step <ins>_I did this
-on purpose_<ins/>
+on purpose_<ins/>.
 
 <img alt="cat huh meme" src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExNTMwaTV2ZDJkc3E1ZGZ1NXB6a3FiZnp1M3gxamVmbTVncDE4aW42NyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/GRk3GLfzduq1NtfGt5/giphy.gif"/>
 
@@ -610,16 +611,17 @@ Click on the link aaaaand:
 
 ![2025-02-23-at-03-06-44.avif](https://res.cloudinary.com/dn4loabuq/image/upload/s--2MZo0g1x--/f_webp,q_auto/ixfjtkkrnffpncjgskc5?_a=BAMCkGUq0)
 
-> Nice
+> +500 Aura
 
 ![2025-02-23-at-03-21-52.avif](https://res.cloudinary.com/dn4loabuq/image/upload/s--9iwxKVNt--/f_webp,q_auto/jhyiopumniipkqqutste?_a=BAMCkGUq0)
 
-> You've reached the end of the post traveler, feel free to rest
+> You've reached the end of the post traveler, feel free to rest here.
 
 ## Conclusion
 
-If you made it here congratulations! You are now the proud recipient of -20
-minutes of your life and maybe a little bit of knowledge. Jokes aside I hope
-you learned a thing or two and if you have something nice to say about the post,
-message
-me on the socials below. Thanks for reading! ✌🏾
+Congratulations! You’re now the proud recipient of -20 minutes of your life. 😆
+Jokes aside, I hope you learned something new and can apply this knowledge to
+other frameworks.
+
+If you found this post helpful or have any thoughts to share, feel free to reach
+out to me on social media. Thanks for reading! ✌🏾
