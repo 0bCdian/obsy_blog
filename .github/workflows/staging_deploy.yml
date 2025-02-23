@@ -36,8 +36,3 @@ jobs:
         run: |
           gcloud config set run/region "${{ env.GCP_REGION }}"
           ./scripts/gh_actions/deploy-image.sh
-      - name: "Upload url to artifacts"
-        uses: actions/upload-artifact@v4
-        with:
-          name: staging-url
-          path: url.txt
