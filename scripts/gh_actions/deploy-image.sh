@@ -10,5 +10,4 @@ STAGING_URL=$(gcloud run deploy "$GCP_APPLICATION" \
   --memory 512M \
   --format='value(status.url)')
 
-echo "$STAGING_URL" >url.txt
 echo "$STAGING_URL"
