@@ -103,7 +103,17 @@ const structuredData = {
     <meta property="twitter:title" content={title} />
     <meta property="twitter:description" content={description} />
     <meta property="twitter:image" content={socialImageURL} />
+    <script>
+      import { setupVimNavigation } from "../utils/vimNavigation.ts";
 
+      // Set up navigation when the page loads
+      document.addEventListener("astro:page-load", () => {
+        const cleanup = setupVimNavigation();
+
+        // Clean up when navigating away
+        document.addEventListener("astro:before-preparation", cleanup);
+      });
+    </script>
     <!-- Google JSON-LD Structured data -->
     <script
       type="application/ld+json"

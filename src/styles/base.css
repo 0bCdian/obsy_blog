@@ -5,9 +5,9 @@
 @layer base {
   :root,
   html[data-theme="dark"] {
-    --color-fill: 30, 28, 27;
+    --color-fill: 40, 40, 40;
     --color-text-base: 235, 219, 178;
-    --color-accent: 250, 189, 47;
+    --color-accent: 210, 164, 89;
     --color-card: 60, 56, 54;
     --color-card-muted: 80, 73, 69;
     --color-border: 102, 92, 84;
@@ -22,7 +22,6 @@
     --color-border: 189, 174, 147;
     --color-logo: 80, 84, 0;
   }
-
   #sun-svg,
   html[data-theme="dark"] #moon-svg {
     display: none;
@@ -50,26 +49,33 @@
   svg.icon-tabler {
     @apply inline-block h-6 w-6 scale-125 fill-transparent stroke-current stroke-2 opacity-90 group-hover:fill-transparent sm:scale-110;
   }
+  /* prettier-ignore */
   .prose {
     @apply prose-headings:!mb-3 prose-headings:!text-skin-base prose-h3:italic prose-p:!text-skin-base prose-a:!text-skin-base prose-a:!decoration-dashed prose-a:underline-offset-8 hover:prose-a:text-skin-accent prose-blockquote:!border-l-skin-accent/50 prose-blockquote:opacity-80 prose-figcaption:!text-skin-base prose-figcaption:opacity-70 prose-strong:!text-skin-base prose-code:rounded prose-code:bg-skin-card/75 prose-code:p-1 prose-code:before:!content-none prose-code:after:!content-none prose-ol:!text-skin-base prose-ul:overflow-x-clip prose-ul:!text-skin-base prose-li:marker:!text-skin-accent prose-table:text-skin-base prose-th:border prose-th:border-skin-line prose-td:border prose-td:border-skin-line prose-img:!my-2 prose-img:mx-auto prose-img:border-2 prose-img:border-skin-line prose-hr:!border-skin-line;
   }
+  /* prettier-ignore */
   .prose a {
     @apply break-words hover:!text-skin-accent;
   }
+  /* prettier-ignore */
   .prose thead th:first-child,
   tbody td:first-child,
   tfoot td:first-child {
     padding-left: 0.5714286em;
   }
+  /* prettier-ignore */
   .prose h2#table-of-contents {
     @apply mb-2;
   }
+  /* prettier-ignore */
   .prose details {
     @apply inline-block cursor-pointer select-none text-skin-base;
   }
+  /* prettier-ignore */
   .prose summary {
     @apply focus-outline;
   }
+  /* prettier-ignore */
   .prose h2#table-of-contents + p {
     @apply hidden;
   }
@@ -130,4 +136,30 @@
   .focus-outline {
     @apply outline-2 outline-offset-1 outline-skin-fill focus-visible:no-underline focus-visible:outline-dashed;
   }
+}
+
+ins {
+  text-decoration-style: wavy;
+  text-underline-offset: 0.375rem;
+  text-decoration-color: rgba(var(--color-accent));
+}
+em {
+  border-radius: 5px;
+  padding: 0 0.5rem;
+}
+
+img,
+video {
+  border: none;
+  /*border-width:0.5px !important;*/
+  /*border-color:#d4be9855 !important;*/
+  border-radius: 0.375rem;
+  box-shadow:
+    0.7px 1.4px 9.7px -4px rgba(0, 0, 0, 0.526),
+    4px 8.1px 14.2px -4px rgba(0, 0, 0, 0.612),
+    5.1px 10.1px 17.3px -4px rgba(0, 0, 0, 0.574),
+    5px 10px 30px -4px rgba(0, 0, 0, 0.47);
+}
+:target {
+  scroll-margin-top: 2.5rem;
 }
